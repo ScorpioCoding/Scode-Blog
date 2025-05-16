@@ -1,0 +1,50 @@
+// STYLING FOR BLOG ARTICLES
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+
+  border: solid 1px var(--surface-2);
+  border-radius: 4px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    img {
+      border-radius: 4px;
+      object-fit: fill;
+      object-position: center;
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      color: var(--txt-change);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-700);
+    }
+
+    .author {
+      color: var(--txt-change);
+      font-size: var(--fs-200);
+      font-weight: var(--fw-400);
+    }
+
+    .about {
+      width: 40ch;
+    }
+
+    .readmore {
+      text-align: end;
+    }
+  }
+}

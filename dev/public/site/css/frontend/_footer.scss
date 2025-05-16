@@ -1,52 +1,46 @@
 footer {
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  gap: 0.05vmax 0.05vmin;
-  width: 100%;
-  height: 60px;
-  background-color: var(--surface-4);
-  color: var(--txt-light);
-}
+	position: sticky;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
 
-.copyright {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  gap: 0.05vmax 0.05vmin;
-  font-size: var(--fs-200);
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	gap: 0.05vmax 0.05vmin;
+	font-size: var(--fs-200);
+
+	width: 100%;
+	height: 30px;
+	background-color: var(--surface-4);
+	color: var(--txt-light);
 }
 
 .scorpio,
 .domain {
-  font-family: var(--ff-accent);
-  font-weight: var(--fw-700);
-  font-size: var(--fs-200);
-  letter-spacing: 0.1rem;
-  text-decoration: var(--f-text-dec);
+	font-family: var(--ff-accent);
+	font-weight: var(--fw-700);
+	font-size: var(--fs-200);
+	letter-spacing: 0.1rem;
+	text-decoration: var(--f-text-dec);
 }
 
 .domain {
-  &:link,
-  &:hover,
-  &:focus,
-  &:visited {
-    color: var(--brand);
-  }
+	&:link,
+	&:hover,
+	&:focus,
+	&:visited {
+		color: var(--text-change);
+	}
 }
 
 .scorpio {
-  &:link,
-  &:hover,
-  &:active,
-  &:visited {
-    color: var(--crimson);
-  }
+	&:link,
+	&:hover,
+	&:active,
+	&:visited {
+		color: var(--crimson);
+	}
 }

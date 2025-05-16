@@ -1,0 +1,61 @@
+// STYLING FOR BLOG CARDS
+
+.blog_card {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  //width: 100%;
+  height: fit-content;
+  padding: 10px;
+
+  border: solid 1px var(--surface-2);
+  border-radius: 4px;
+
+  .blog_card_header {
+    display: flex;
+    flex-direction: column;
+    img {
+      border-radius: 10px;
+      object-fit: fill;
+      object-position: center;
+      width: 400px;
+      aspect-ratio: 16/9;
+    }
+    .blog_card_author {
+      color: var(--txt-change);
+      font-size: var(--fs-200);
+      font-weight: var(--fw-400);
+    }
+  }
+
+  .blog_card_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    .blog_card_title {
+      flex: 1;
+      color: var(--txt-change);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-700);
+    }
+    .blog_card_body {
+      min-height: 100px;
+      flex: 2;
+    }
+
+    .blog_card_readmore {
+      flex: 1;
+      text-align: end;
+    }
+  }
+}
+
+@media (max-width: 45em) {
+  .blog_card {
+    flex-direction: column;
+  }
+}

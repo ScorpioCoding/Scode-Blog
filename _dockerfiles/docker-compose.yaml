@@ -37,7 +37,9 @@ services:
       - scdata:/var/lib/mysql
     restart: always # always restart unless stopped manually
     environment:
-      MYSQL_DATABASE: scorpio
+      MYSQL_DATABASE: scorpioblog
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: r00tadmin
       MYSQL_ROOT_PASSWORD: r00tadmin
     networks:
       - scorpionet
@@ -51,7 +53,7 @@ services:
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     ports:
-      - 6084:80
+      - 6088:80
     networks:
       - scorpionet
 

@@ -1,0 +1,24 @@
+<h1>THIS THE ARTICLE PAGE</h1>
+
+<div className="container-center">
+  <?php foreach ($data as $post): ?>
+    <article>
+      <div className="header">
+        <img src="<?= $post['image'] ?>" alt="image-<?= $post['id'] ?>" />
+        <div className="author">
+          <span>Author : </span>
+          <span><?= $post['author'] ?></span>
+          <span> -- </span>
+          <span>Created : </span>
+          <span><?= $post['created_at'] ?></span>
+        </div>
+      </div>
+      <div className="content">
+        <div className="title"><?= $post['name'] ?></div>
+        <div className="body">
+          <?= $post['body'] ?>
+        </div>
+      </div>
+    </article>
+  <?php endforeach ?>
+</div>

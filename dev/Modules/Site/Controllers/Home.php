@@ -32,10 +32,6 @@ class Home extends Controller
     $data = array();
 
 
-
-
-    //page for rendering default = controller
-    //$args['page'] = 'Home';
     View::render($args, $meta, $trans, [
       'data' => $data
     ]);

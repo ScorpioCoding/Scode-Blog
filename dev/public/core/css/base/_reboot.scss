@@ -23,21 +23,35 @@ video {
 }
 
 .container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.container-center {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   place-content: center;
   place-items: center;
+  overflow-y: hidden;
 }
 
-.flexFlow {
+.flexflow {
   display: flex;
   flex-flow: row wrap;
-  gap: 1em;
+  column-gap: 1em;
+}
+
+.flexflow-center {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1em;
   place-content: center;
   place-items: center;
 }
-
 .bgImage {
   background-repeat: no-repeat;
   background-position: center;

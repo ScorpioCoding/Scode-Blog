@@ -38,7 +38,21 @@ return (object) array(
     'namespace' => 'Modules\Site\Controllers',
     'controller' => 'Contact',
     'action' => 'index'
-  ]
+  ],
+
+  '/{lang}/blog' => [
+    'module' => 'Site',
+    'namespace' => 'Modules\Site\Controllers',
+    'controller' => 'Blog',
+    'action' => 'index'
+  ],
+
+  '/{lang}/article/{slug:[a-z0-9]+(?:-[a-z0-9]+)*}' => [
+    'module' => 'Site',
+    'namespace' => 'Modules\Site\Controllers',
+    'controller' => 'Article',
+    'action' => 'index'
+  ],
 
 
 

@@ -1,0 +1,12 @@
+{
+	"branding": {
+		"slogan": "Design, Develop, Devops our pleasure! ",
+		"welcome": "- welcome -"
+	},
+	"nav": {
+		"home": "Home",
+		"about": "About",
+		"blog": "Blog",
+		"contact": "Contact"
+	}
+}

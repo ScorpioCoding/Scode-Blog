@@ -21,6 +21,7 @@ class About extends Controller
   {
     //Template for rendering
     $args['template'] = 'Frontend';
+    $args['view'] = "About";
     //MetaData
     $meta = array();
     $meta = (new Meta($args))->getMeta();

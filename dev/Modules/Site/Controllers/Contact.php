@@ -21,6 +21,7 @@ class Contact extends Controller
   {
     //Template for rendering
     $args['template'] = 'Frontend';
+    $args['view'] = "Contact";
     //MetaData
     $meta = array();
     $meta = (new Meta($args))->getMeta();

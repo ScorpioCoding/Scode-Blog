@@ -21,6 +21,7 @@ class Home extends Controller
   {
     //Template for rendering
     $args['template'] = 'Frontend';
+    $args['view'] = "Home";
     //MetaData
     $meta = array();
     $meta = (new Meta($args))->getMeta();

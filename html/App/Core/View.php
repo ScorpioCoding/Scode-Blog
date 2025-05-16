@@ -18,7 +18,7 @@ class View
     $view = PATH_MOD;
     $view .= ucfirst($args['module']) . DS . 'Views' . DS;
     $view .= ucfirst($args['view']);
-    $view .= '.php';
+    $view .= '.phtml';
 
     try {
       self::checkFile($view);

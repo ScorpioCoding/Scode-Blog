@@ -13,16 +13,16 @@ class View
     echo ('test within the class not static');
   }
 
-  public static function setPage($args = array())
+  public static function setView($args = array())
   {
-    $page = PATH_MOD;
-    $page .= ucfirst($args['module']) . DS . 'Views' . DS;
-    $page .= ucfirst($args['controller']);
-    $page .= '.phtml';
+    $view = PATH_MOD;
+    $view .= ucfirst($args['module']) . DS . 'Views' . DS;
+    $view .= ucfirst($args['view']);
+    $view .= '.php';
 
     try {
-      self::checkFile($page);
-      return $page;
+      self::checkFile($view);
+      return $view;
     } catch (NewException $e) {
       echo $e->getErrorMsg();
       return false;
@@ -54,11 +54,11 @@ class View
   public static function render($args = array(), $meta = array(), $trans = array(), $data = array())
   {
     try {
-      $page = self::setPage($args);
+      $view = self::setView($args);
 
       $template = self::setTemplate($args);
 
-      if ($page) {
+      if ($view) {
         extract($meta);
         extract($data);
         require $template;

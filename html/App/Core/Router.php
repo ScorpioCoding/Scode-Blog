@@ -95,10 +95,10 @@ class Router
         throw new NewException("ROUTER :: The Controller for route '$uri' was not found, Check Config/routes");
       }
     } else {
-      //TODO REDIRECT HEADER TO CUSTOM 404
       //throw new NewException('ROUTER :: No route matched.', 404);
+      // Do not forget the file 404.htm in the public folder.
       header('HTTP/1.1 404 Not Found');
-      header("Refresh:0; url=404.php");
+      header("Refresh:0; url=/404.htm");
     }
   }
 

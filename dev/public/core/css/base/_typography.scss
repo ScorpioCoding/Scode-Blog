@@ -1,10 +1,9 @@
 /* GENERAL TYPOGRAPHY INFORMATION */
-@use '../abstracts/mixins' as mix;
-@use '../abstracts/variables';
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables";
 
 //Base size width 320px i-phone 5
 :root {
-
   //navigation links
   --nav-a-fs: var(--fs-500);
   //footer
@@ -14,8 +13,6 @@
   --foot-fw: var(--fw-700);
   --foot-td: var(--f-text-dec);
 }
-
-
 
 body {
   font-family: var(--ff-brand);
@@ -45,10 +42,22 @@ h3 {
   font-size: var(--fs-200);
 }
 
+code {
+  font-family: var(--ff-code);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-200);
+  line-height: 1.5;
+}
 
-// Base size std 45em 
+.errorList {
+  font-family: var(--ff-code);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-200);
+  line-height: 1.5;
+}
+
+// Base size std 45em
 @media (min-width: 45em) {
-
   // body {
   //   font-weight: var(--fw-500);
   //   font-size: var(--fs-500);

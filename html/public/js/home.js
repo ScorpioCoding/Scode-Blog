@@ -1,1 +1,0 @@
-window.showContacts=o=>{console.log(o),window.location="/"+o+"/contact"};

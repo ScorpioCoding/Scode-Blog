@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
 
 :root {
-  --ff-base: 'Baloo 2';
-  --ff-brand: 'Baloo 2';
-  --ff-accent: 'Syncopate', sans-serif;
+  --ff-base: "Baloo 2";
+  --ff-brand: "Baloo 2";
+  --ff-accent: "Syncopate", sans-serif;
+  --ff-code: "Fira Code";
 
   --fw-900: 900;
   --fw-800: 800;
@@ -29,10 +31,28 @@
   --f-text-dec: none;
 
   //colors
-  --grey: hsl(0, 0%, 20%);
-  --grey-hue: 0;
-  --grey-sat: 0%;
-  --grey-light: 20%;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 10%);
+
+  --grey-light: hsl(0, 0%, 80%);
+  --grey-light-hue: 0;
+  --grey-light-sat: 0%;
+  --grey-light-light: 80%;
+
+  --grey-normal: hsl(0, 0%, 60%);
+  --grey-normal-hue: 0;
+  --grey-normal-sat: 0%;
+  --grey-normal-light: 60%;
+
+  --grey-medium: hsl(0, 0%, 40%);
+  --grey-medium-hue: 0;
+  --grey-medium-sat: 0%;
+  --grey-medium-light: 40%;
+
+  --grey-dark: hsl(0, 0%, 20%);
+  --grey-dark-hue: 0;
+  --grey-dark-sat: 0%;
+  --grey-dark-light: 20%;
 
   --crimson: hsl(354, 100%, 50%);
   --crimson-hue: 354;

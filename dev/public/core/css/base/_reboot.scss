@@ -22,14 +22,10 @@ video {
   display: block;
 }
 
-main {
-  margin-block: 10px;
-  padding: 0;
-}
-
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   place-content: center;
   place-items: center;
 }
@@ -51,7 +47,6 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 .sectionOverlay {
   background-color: hsla(var(--brand-hue), 90%, 33%, 0.5);
   border-radius: 0.5em;
@@ -60,7 +55,8 @@ main {
 .rad-shadow {
   border: 1px solid hsl(var(--primary) 10% 50% / 15%);
   box-shadow: 0 1rem 0.5rem -0.5rem;
-  box-shadow: 0 2.8px 2.2px hsl(var(--shadow) / calc(var(--shadow-strength) + 0.03)),
+  box-shadow: 0 2.8px 2.2px
+      hsl(var(--shadow) / calc(var(--shadow-strength) + 0.03)),
     0 6.7px 5.3px hsl(var(--shadow) / calc(var(--shadow-strength) + 0.01)),
     0 12.5px 10px hsl(var(--shadow) / calc(var(--shadow-strength) + 0.02)),
     0 22.3px 17.9px hsl(var(--shadow) / calc(var(--shadow-strength) + 0.02)),

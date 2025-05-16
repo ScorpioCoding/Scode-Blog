@@ -1,0 +1,173 @@
+//STYLES BUTTONS
+
+%button-shared {
+  border: 0;
+  //margin: 2px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-fern {
+  @extend %button-shared;
+  background-color: var(--fern);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--fern-dark);
+  }
+}
+.btn-fern-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--fern);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--fern-dark);
+  }
+}
+
+.btn-crimson {
+  @extend %button-shared;
+  background-color: var(--crimson);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--crimson-dark);
+  }
+}
+
+.btn-crimson-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--crimson);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--crimson-dark);
+  }
+}
+
+.btn-grey {
+  @extend %button-shared;
+  background-color: var(--grey-medium);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--grey-dark);
+  }
+}
+
+.btn-grey-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--grey-medium);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--grey-dark);
+  }
+}
+
+.btn-boston {
+  @extend %button-shared;
+  background-color: var(--boston);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--boston-dark);
+  }
+}
+
+.btn-boston-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--boston);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--boston-dark);
+  }
+}
+
+.btn-coral {
+  @extend %button-shared;
+  background-color: var(--coral);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--coral-dark);
+  }
+}
+
+.btn-coral-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--coral);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--coral-dark);
+  }
+}
+
+.btn-razzle {
+  @extend %button-shared;
+  background-color: var(--razzle);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--razzle-dark);
+  }
+}
+
+.btn-razzle-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--razzle);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--razzle-dark);
+  }
+}
+
+.btn-royal {
+  @extend %button-shared;
+  background-color: var(--royal);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--royal-dark);
+  }
+}
+
+.btn-royal-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--royal);
+  color: var(--grey-light);
+  &:hover {
+    background-color: var(--royal-dark);
+  }
+}
+
+.btn-sun {
+  @extend %button-shared;
+  background-color: var(--sun);
+  color: var(--grey-dark);
+  &:hover {
+    background-color: var(--sun-dark);
+  }
+}
+
+.btn-sun-stretch {
+  @extend %button-shared;
+  width: 100%;
+  background-color: var(--sun);
+  color: var(--grey-dark);
+  &:hover {
+    background-color: var(--sun-dark);
+  }
+}
+
+.btn-transparent-light {
+  border: 0;
+  margin: 2px;
+  padding: 8px;
+  cursor: pointer;
+  //width: 100%;
+  background-color: transparent;
+  color: var(--grey-light);
+  &:hover {
+    color: var(--grey-dark);
+  }
+}
